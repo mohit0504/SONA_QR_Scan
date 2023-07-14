@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: image-set('bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+   
+}
+
+.Qrpage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    /* opacity: 0.5; */
+}
+
+.Qrpage__head{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fec84e;
+    background-image: linear-gradient(315deg, #fec84e 0%, #ffdea8 74%);
+
+}
+
+.Qrpage__headline{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.Qrpage__headline h1{
+    font-size: 3rem;
+    color: DodgerBlue;
+    font-family: sitka;
+}
+
+.Qrpage__headline p{
+    font-size: 1.5rem;
+    color: DodgerBlue;
+    text-align: center;
+    font-family: sitka;
+}
+
+.Qrpage__box{
+    height: 250px;
+    width: 550px;
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    border-radius: 12px;
+    border: 10px green;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-items: center; */
+    flex-direction: column;
+    
+}
+
+.Qrpage__box p{
+    
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Qrpage__section{
+    gap: 15px;
+    margin-top: 20px;
+    height: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Qrpage__title{
+    font-family: Algerian;
+    font-size: 30px;
+}
+
+
+/* CSS */
+.button {
+display: inline-block;
+border-radius: 7px;
+border: none;
+background: #1875FF;
+color: white;
+font-family: inherit;
+text-align: center;
+font-size: 12px;
+box-shadow: 0px 14px 56px -11px #1875FF;
+width: 500px ;
+
+padding: 1em;
+transition: all 0.4s;
+cursor: pointer;
+}
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.4s;
+}
+
+.button span:after {
+content: 'for free';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.7s;
+}
+
+.button:hover span {
+padding-right: 3.55em;
+}
+
+.button:hover span:after {
+opacity: 4;
+right: 0;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .Qrpage__box{
+        height: 200px;
+        width: 400px
+    }
+
+    .button{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .Qrpage__box{
+        height: 200px;
+        width: 250px;
+    }
+}
